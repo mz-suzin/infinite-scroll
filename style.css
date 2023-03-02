@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
+
+html {
+    /* avoids padding to force a horizontal scroll bar  */
+    box-sizing: border-box; 
+}
+
+body {
+    margin: 0;
+    /* full height of the entire screen */
+    min-height: 100vh;
+    font-family: 'Rubik Iso', cursive;
+    background: whitesmoke;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+
+/* Loader */
+
+.loader {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.loader img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
