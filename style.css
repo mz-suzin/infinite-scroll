@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100&display=swap');
 
 html {
     /* avoids padding to force a horizontal scroll bar  */
@@ -9,7 +9,7 @@ body {
     margin: 0;
     /* full height of the entire screen */
     min-height: 100vh;
-    font-family: 'Rubik Iso', cursive;
+    font-family: 'Exo 2', sans-serif;
     background: whitesmoke;
 }
 
@@ -36,5 +36,28 @@ h1 {
     position: fixed;
     top: 50%;
     left: 50%;
+    /* the line below is a way to make the center of the image being the origin for the other positioning configurations. Otherwise, it would consider the top-left most corner of the image as the origin  */
     transform: translate(-50%, -50%);
+}
+
+/* Image Container */
+.image-container {
+    /* margin: (top&bottom) (left&right) */
+    margin: 10px 15%;
+}
+
+.image-container img {
+    width: 100%;
+    margin-top: 5px;
+}
+
+/* Media Query: Large Smartphone */
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    .image-container {
+        margin: 10px 5%;
+    }
 }
